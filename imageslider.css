@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+#imageboxes{
+    height: 300px;width: 600px;display: grid;grid-template-columns: repeat(8,180px);grid-template-rows: 280px;
+    overflow-x: scroll;gap: 30px;padding-top: 10px;
+}
+.classinner{
+   border: solid transparent;
+
+}
+.logo{height: 80px;width: 80px;text-align: center;line-height: 80px;border: solid 1px transparent;
+    font-size: 50px;background-color: orange;border-radius: 50%;
+}
+img{
+    height: 100%;width: 100%;filter: grayscale(100%);transition: transform 0.5;
+}
+.parent{height: 500px;width: 800px;border: solid transparent;margin: auto;
+    display: flex;flex-direction: row;justify-content: space-around;align-items: center;
+}
+#imageboxes::-webkit-scrollbar{
+    display: none;
+}
+img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+    transform: scale(1.2);
+}
